@@ -5,6 +5,9 @@ provider: clab
 
 nodes:
   r1:
+      publish:
+        # tcp port 22 will be published and accessible to anyone
+        - tcp/22
     bgp.as: 65001
   r2:
     bgp.as: 65002
